@@ -9,11 +9,11 @@ const defTextDisplayed = 'Lorem ipsum dolor sit amet, consectetur adipiscing eli
 
 
 const soporteTecnico = "Brindamos soporte tecnico tanto a empresas como a particulares, ... ";
-const seguridadVigilancia = "";
+const seguridadVigilancia = "Segurida y vigilancia blablablablablablablabla blablablablablablablabla blablablablablablablabla blablablablablablablabla blablablablablablablabla";
 const mantenimientoActualizacion = "Holaaaaaaaaaaaaaaaaaaaaaaaaaaa a a a a a";
-const backups = "wqeeeeeeeeeeeeeeeeee";
+const backups = "Backups backups aaa backups a a a blablablablablablablabla";
 const accesorios = "accesorios";
-const lastItem = "";
+const lastItem = "Este item falta rellenarlo, posiblemente vaya dise;o web o algun otro punto te interes";
 
 
 function hoverText(currentBtn) {

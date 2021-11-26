@@ -9,20 +9,20 @@
     <title>MAB COMPUTERS</title>
   </head>
   <body>
-  <header>
+  <header id="#start">
     <div class="biglogo">
         <h1>MABCOMPUTERS LOGO</h1>
     </div>
     <div class="perolaputamadreotrodivmas">
         <nav class="mainmenu">
-            <div class="botones"><h5 class="important-buttons">INICIO</h5></div>
-            <div class="botones"><h5 class="important-buttons">SERVICIOS</h5></div>
-            <div class="botones"><h5 class="important-buttons">CONTACTO</h5></div>
+            <div class="botones"><h5 class="important-buttons"><a href="#start">INICIO</a></h5></div>
+            <div class="botones"><h5 class="important-buttons"><a href="#services">SERVICIOS</a></h5></div>
+            <div class="botones"><h5 class="important-buttons"><a href="#contact">CONTACTO</a></h5></div>
         </nav>
     </div>
     <nav class="second-mm">
-            <div class="especialboton2"><h5 class=tvad>TEAMVIEWER</h5></div>
-            <div class="especialboton1"><h5 class="tvad">ANYDESK</h5></div>
+            <a class="especialboton2" target="_blank" href="C:\Program Files (x86)\TeamViewer\TeamViewer.exe"><div class="especialboton2"><h5 class="tvad">TEAMVIEWER</h5></div></a>
+            <a href="https://anydesk.com/en/downloads" target="_blank"><div class="especialboton1"><h5 class="tvad">ANYDESK</h5></div></a>
         </nav>
     </header>
     <main>
@@ -31,7 +31,6 @@
     <div class="display-flex">
 
         <div class="sites-library">
-        <!--<h3>Biblioteca de accesos directos</h3>-->
         <li class="icon-list">
                     <ul><a href="https://www.google.com.ar" target="_blank">
                     <svg class="icons" viewBox="0 0 23 23">
@@ -233,16 +232,16 @@
     <div class="midheader">
         <h2>Nuestro servicio técnico esta respaldado por<br> 28 años de experiencia<br> en el mercado</h2>
     </div>
-<div class="grid-gap1"></div>
-    <div class="servicios">
 
-        <div class="each-card" id="button1" onmouseover="hoverText(this)" onmouseout="defText()"><h6>Soporte técnico</h6>
+    <div class="servicios" id="services">
+
+        <div class="each-card" id="button1" onmouseover="hoverText(this)" onmouseout="defText()"><h6>Soporte técnico<br>local y remoto</h6>
             <img class="na-icons" src="./css/tools.svg"/>
         </div>
         <div class="each-card" id="button2" onmouseover="hoverText(this)" onmouseout="defText()"><h6>Seguridad y vigilancia</h6>
             <img class="na-icons" src="./css/cctv-camera2.svg"/>
         </div>
-            <div class="each-card" id="button3" onmouseover="hoverText(this)" onmouseout="defText()"><h6>Backups</h6>
+            <div class="each-card" id="button3" onmouseover="hoverText(this)" onmouseout="defText()"><h6>Copias de seguridad (backup)</h6>
             <img class="na-icons" src="./css/backups.svg"/>
         </div>
         <div class="each-card" id="button4" onmouseover="hoverText(this)" onmouseout="defText()"><h6>Mantenimiento y actualización</h6>
@@ -251,16 +250,17 @@
         <div class="each-card" id="button5" onmouseover="hoverText(this)" onmouseout="defText()"><h6>Accesorios</h6>
             <img class="na-icons" src="./css/keyboard.svg"/>
         </div>
-        <div class="each-card" id="button6" onmouseover="hoverText(this)" onmouseout="defText()"><h6>otro item</h6>
+        <div class="each-card" id="button6" onmouseover="hoverText(this)" onmouseout="defText()"><h6>Diseño web a medida</h6>
+            <img class="na-icons" src="./css/webicon.svg"/>
         </div>
         <div class="subgrid-info">
-            <h4>Brindamos atencion tanto a particulares como a empresas</h4>
+            <h4>Brindamos atencion tanto a particulares como a empresas</h4><br>
             <p class="item-description" id="interchangableText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet vulputate nibh. Nam vel dui aliquam, sollicitudin neque eu, mollis lacus. Praesent egestas velit a justo mollis fringilla. Donec ullamcorper luctus urna, et efficitur tellus rutrum non. Ut ultrices varius ante, ut pellentesque erat tristique eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet placerat lacus.</p>
         </div>
 
     </div>
-<div class="grid-gap2"></div>
-    <footer>
+
+    <footer id="contact">
     <div class="f-container">
         <div class="space">
             <svg id="tinyicons" viewBox="0 0 24 24" width="24" height="24"><path d="M12,6a4,4,0,1,0,4,4A4,4,0,0,0,12,6Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,12,12Z"/><path d="M12,24a5.271,5.271,0,0,1-4.311-2.2c-3.811-5.257-5.744-9.209-5.744-11.747a10.055,10.055,0,0,1,20.11,0c0,2.538-1.933,6.49-5.744,11.747A5.271,5.271,0,0,1,12,24ZM12,2.181a7.883,7.883,0,0,0-7.874,7.874c0,2.01,1.893,5.727,5.329,10.466a3.145,3.145,0,0,0,5.09,0c3.436-4.739,5.329-8.456,5.329-10.466A7.883,7.883,0,0,0,12,2.181Z"/></svg>
@@ -279,7 +279,7 @@
 
     </main>
 
-    <div></div>
+    <div class="signature">MAB Computers - 2021</div>
     <script src="./realtime-changes.js"></script>
   </body>
 
