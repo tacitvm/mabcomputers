@@ -68,28 +68,32 @@ h1{
 
             /* MAIN NAVBAR */
 .perolaputamadreotrodivmas{
-    display:block;
-    position: sticky;
+    display:flex;
+    align-items:center;
+    position:sticky;
+    top:0;
+    background:var(--whitey);
+    height:auto;
+
 }
 nav.mainmenu{
     color:rgba(27,23,37,1);
     justify-content: space-around;
-    padding:0.5rem;
+    //padding:0.5rem;
     font-family: var(--chosen-font);
     font-size: 1.3em;
     font-weight:900;
     letter-spacing:0.1em;
     display: inline-flex;
-    height:10vh;
+    height:6vh;
     width:50%;
     align-items:center;
 }
 .botones {
     display:flex;
     text-align:center;
-    align-content:center;
     justify-content:center;
-    padding:0.6em;
+    padding-top:1em;
     width:13em;
     height: 4rem;
     transition:0.3s;
@@ -97,14 +101,15 @@ nav.mainmenu{
 .important-buttons{
     padding: 0 1em;
     width:auto;
-    height:auto;
+    height:2em;
     display:flex;
     justify-content:center;
     text-align:center;
+
     transition: border-bottom 0.3s;
 }
 .important-buttons:hover{
-        border-bottom: 0.4rem solid var(--basic-blue);
+        border-bottom: 0.3rem solid var(--basic-blue);
         transition: border-bottom 0.2s;
 }
                     /* TEAMVIEWER & ANYDESK BUTTONS */
@@ -138,6 +143,7 @@ a{
 }
                     /* FAVOURITES DOCK */
 main{
+    margin-top:1vh;
     height:120rem;
     width:100%;
     display:grid;
