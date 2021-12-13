@@ -1,9 +1,9 @@
-const hover1 = document.getElementById("button1");
-const hover2 = document.getElementById("button2");
-const hover3 = document.getElementById("button3");
-const hover4 = document.getElementById("button4");
-const hover5 = document.getElementById("button5");
-const hover6 = document.getElementById("button6");
+const click1 = document.getElementById("button1");
+const click2 = document.getElementById("button2");
+const click3 = document.getElementById("button3");
+const click4 = document.getElementById("button4");
+const click5 = document.getElementById("button5");
+const click6 = document.getElementById("button6");
 let textContainer = document.getElementById("interchangableText");
 const defTextDisplayed = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet vulputate nibh. Nam vel dui aliquam, sollicitudin neque eu, mollis lacus. Praesent egestas velit a justo mollis fringilla. Donec ullamcorper luctus urna, et efficitur tellus rutrum non. Ut ultrices varius ante, ut pellentesque erat tristique eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet placerat lacus.';
 
@@ -16,26 +16,99 @@ const accesorios = "Tenemos todos los accesorios para tu computadora, teclados, 
 const lastItem = "¿Querés darle más visibilidad y profesionalidad a tu negocio? Diseñamos páginas web a medida, ETC";
 
 
-function hoverText(currentBtn) {
+function showText(currentBtn) {
     let toEval = currentBtn.id;
+        textContainer.style.transition = 'opacity';
+        textContainer.style.transitionDuration = "0.3s";
+        textContainer.style.opacity = '0';
     switch (toEval) {
         case 'button1':
-            textContainer.innerHTML = soporteTecnico; break;
+            textContainer.innerHTML = soporteTecnico;
+            textContainer.style.opacity = '1';
+            break;
         case 'button2':
-           textContainer.innerHTML = seguridadVigilancia; break;
+            textContainer.innerHTML = seguridadVigilancia;
+            textContainer.style.opacity = '1';
+            break;
         case 'button3':
-            textContainer.innerHTML = backups; break;
+            textContainer.innerHTML = backups;
+            textContainer.style.opacity = '1';
+            break;
         case 'button4':
-            textContainer.innerHTML = mantenimientoActualizacion; break;
+            textContainer.innerHTML = mantenimientoActualizacion;
+            textContainer.style.opacity = '1';
+            break;
         case 'button5':
-            textContainer.innerHTML = accesorios; break;
+            textContainer.innerHTML = accesorios;
+            textContainer.style.opacity = '1';
+            break;
         case 'button6':
-            textContainer.innerHTML = lastItem; break;
+            textContainer.innerHTML = lastItem;
+            textContainer.style.opacity = '1';
+            break;
         default:
-            textContainer.innerHTML = defTextDisplayed; break;
+            textContainer.innerHTML = defTextDisplayed;
+            textContainer.style.opacity = '1';
+            break;
 }
 }
 
-function defText() {
-    textContainer.innerHTML = defTextDisplayed;
+function defText(currentHover) {
+    textContainer.style.transition = 'opacity 0.3s';
+    textContainer.style.opacity = '0';
+    console.log(currentHover);
+    switch (currentHover.id){
+    case 'button1':
+        click2.style.opacity = '1';
+        click3.style.opacity = '1';
+        click4.style.opacity = '1';
+        click5.style.opacity = '1';
+        click6.style.opacity = '1';
+        break;
+    case 'button2':
+        click1.style.opacity = '1';
+        click3.style.opacity = '1';
+        click4.style.opacity = '1';
+        click5.style.opacity = '1';
+        click6.style.opacity = '1';
+        break;
+    case 'button3':
+        click1.style.opacity = '1';
+        click2.style.opacity = '1';
+        click4.style.opacity = '1';
+        click5.style.opacity = '1';
+        click6.style.opacity = '1';
+        break;
+    case 'button4':
+        click1.style.opacity = '1';
+        click2.style.opacity = '1';
+        click3.style.opacity = '1';
+        click5.style.opacity = '1';
+        click6.style.opacity = '1';
+        break;
+    case 'button5':
+        click1.style.opacity = '1';
+        click2.style.opacity = '1';
+        click3.style.opacity = '1';
+        click4.style.opacity = '1';
+        click6.style.opacity = '1';
+        break;
+    case 'button6':
+        click1.style.opacity = '1';
+        click2.style.opacity = '1';
+        click3.style.opacity = '1';
+        click4.style.opacity = '1';
+        click5.style.opacity = '1';
+
+}
+}
+
+function changeOpac(hoveredItem) {
+    (hoveredItem.id != 'button1') ? click1.style.opacity = '0.5' : '';
+    (hoveredItem.id != 'button2') ? click2.style.opacity = '0.5' : '';
+    (hoveredItem.id != 'button3') ? click3.style.opacity = '0.5' : '';
+    (hoveredItem.id != 'button4') ? click4.style.opacity = '0.5' : '';
+    (hoveredItem.id != 'button5') ? click5.style.opacity = '0.5' : '';
+    (hoveredItem.id != 'button6') ? click6.style.opacity = '0.5' : '';
+
 }

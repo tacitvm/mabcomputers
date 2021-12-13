@@ -179,6 +179,13 @@ main{
     .contact-info{
         background-size:cover;
     }
+    main{
+    grid-template: 30% 1% 36% 33% 4% / 100% ;
+    }
+    .midheader{
+    grid-row-start:1;
+    grid-row-end:2;
+    }
 }
 #display-block{
     display:block;
@@ -321,11 +328,12 @@ span:hover{
     height:3em;
     background-color:rgba(222,226,230,1);
     border-radius:3px;
-    font-size:1.6rem;
+    font-size:1.8rem;
     font-family: var(--second-font);
     box-shadow:0 0.1em 0.3em rgba(11,9,10,0.5);
     justify-content: space-between;
     align-items:center;
+    transition:opacity 0.5s;
 }
 #button1{
     grid-row-start:2;
@@ -381,11 +389,14 @@ h4{
 .item-description{
     grid-row-start:3;
     grid-row-end:4;
-    transition:0.5s;
     font-family: var(--second-font);
     color: var(--whitey);
     font-size:2vw;
 }
+#interchangableText{
+    opacity: 0;
+}
+
 @media screen and (max-width:1250px){
     .item-description{
         font-size: 1.7rem;
@@ -618,7 +629,7 @@ footer{
         display:block;
         font-family:var(--third-font);
         margin:2%;
-        width:100%;
+        width:98%;
     }
     .mierdecillas-mob{
 
