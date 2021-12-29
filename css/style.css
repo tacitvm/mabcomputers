@@ -642,24 +642,24 @@ footer{
     .mab-cr{
         text-align:center;
         align-items:center;
+        justify-items:center;
         color: var(--whitey);
         height:25%;
         display:block;
         font-family:var(--third-font);
         margin:2%;
-        width:60vw;
+        width:70%;
     }
     .mierdecillas-mob{
-    height:75%;
+        display:flex;
+        width:30%;
+        height:75%;
     }
 
     .afip{
         display:flex;
-        align-self:center;
-        justify-self:center;
         margin:auto;
-        width:2.3rem;
-        height:3rem;
+        width:30%;
     }
 
 }
