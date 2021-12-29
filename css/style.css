@@ -554,7 +554,7 @@ footer{
 
         right:2%;
         padding:2%;
-        font-size:12vw;
+        font-size:3rem;
         width:90%;
         text-align:right;q
         text-justify:inter-character;
@@ -573,6 +573,8 @@ footer{
     }
     .service-mobile-buttons{
         display:block;
+        width:85%;
+
         grid-row-start:2;
         grid-row-end:3;
     }
@@ -620,10 +622,14 @@ footer{
         display:block;
         grid-row-start:3;
         grid-row-end: 4;
-        width:90%;
+        width:97%;
         padding:15px;
         background-image:var(--bluegradient);
         border-radius:25px;
+    }
+    .google-maps-second{
+        width:100%;
+
     }
     .signature-mob{
         display:flex-box;
@@ -648,6 +654,7 @@ footer{
     .mierdecillas-mob{
 
     }
+
     .afip{
         display:flex;
         align-self:center;
