@@ -5,7 +5,7 @@ const click4 = document.getElementById("button4");
 const click5 = document.getElementById("button5");
 const click6 = document.getElementById("button6");
 let textContainer = document.getElementById("interchangableText");
-const defTextDisplayed = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet vulputate nibh. Nam vel dui aliquam, sollicitudin neque eu, mollis lacus. Praesent egestas velit a justo mollis fringilla. Donec ullamcorper luctus urna, et efficitur tellus rutrum non. Ut ultrices varius ante, ut pellentesque erat tristique eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet placerat lacus.';
+
 
 
 const soporteTecnico = "Nos encargamos de identificar el problema tanto de software como hardware para brindarte la mejor solución a tu alcance. Reparamos computadoras de escritorio, notebooks y netbooks. Sí tenés un problema de software con algún programa, incluso podemos solucionarlo remotamente. (aca va contacto mas rapido, sea telefono, whatsapp, etc) con un botón CTA";
@@ -56,7 +56,6 @@ function showText(currentBtn) {
 function defText(currentHover) {
     textContainer.style.transition = 'opacity 0.3s';
     textContainer.style.opacity = '0';
-    console.log(currentHover);
     switch (currentHover.id){
     case 'button1':
         click2.style.opacity = '1';
@@ -110,5 +109,42 @@ function changeOpac(hoveredItem) {
     (hoveredItem.id != 'button4') ? click4.style.opacity = '0.5' : '';
     (hoveredItem.id != 'button5') ? click5.style.opacity = '0.5' : '';
     (hoveredItem.id != 'button6') ? click6.style.opacity = '0.5' : '';
-
 }
+
+const mobItemClick1 = document.getElementById('mob-btn-1');
+const mobItemClick2 = document.getElementById('mob-btn-2');
+const mobItemClick3 = document.getElementById('mob-btn-3');
+const mobItemClick4 = document.getElementById('mob-btn-4');
+const mobItemClick5 = document.getElementById('mob-btn-5');
+const mobItemClick6 = document.getElementById('mob-btn-6');
+
+function descAnim(selected) {
+    switch (selected.id) {
+        case 'mob-btn-1':
+            textDescCont = `<div><p>${soporteTecnico}</p></div>`;
+            selected.insertAdjacentHTML('afterend', textDescCont);
+            break;
+        case 'mob-btn-2':
+            textDescCont = `<div><p>${seguridadVigilancia}</p></div>`;
+            selected.insertAdjacentHTML('afterend', textDescCont);
+            break;
+        case 'mob-btn-3':
+            textDescCont = `<div><p>${backups}</p></div>`;
+            selected.insertAdjacentHTML('afterend', textDescCont);
+            break;
+        case 'mob-btn-4':
+            textDescCont = `<div><p>${mantenimientoActualizacion}</p></div>`;
+            selected.insertAdjacentHTML('afterend', textDescCont);
+            break;
+        case 'mob-btn-5':
+            textDescCont = `<div><p>${accesorios}</p></div>`;
+            selected.insertAdjacentHTML('afterend', textDescCont);
+            break;
+        case 'mob-btn-6':
+            textDescCont = `<div><p>${lastItem}</p></div>`;
+            selected.insertAdjacentHTML('afterend', textDescCont);
+            break;
+        default:
+    }
+}
+
