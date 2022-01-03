@@ -537,27 +537,21 @@ footer{
         grid-row-end:2;
         width:100%;
         height:100%;
-//        border-radius:20px;
-        box-shadow:
-                    0px 10px #193498,
-                    0px -5px #193498;
     }
     .mob-intro{
-        margin:3% 0;
-        display:flex;
-        width:100%;
-        height:98%;
-        background:var(--whitey);
-
+        display:block;
+        width:97%;
+        height:100%;
+        padding:15px;
+        background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, transparent 80%), url(../chips.svg);
+        border-radius:25px;
+        margin:auto;
     }
     p.maintitle{
-        position:absolute;
-        right:2%;
         padding:2%;
-        font-size:3rem;
+        font-size:2.4rem;
         width:90%;
-        text-align:right;q
-        text-justify:inter-character;
+        color:var(--whitey);
         font-family:var(--chosen-font);
 
     }
