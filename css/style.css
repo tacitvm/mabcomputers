@@ -663,7 +663,14 @@ footer{
         margin:auto;
         width:30%;
     }
-
+    .removableButton{
+        font-size:1.4rem;
+        font-family: var(--second-font);
+        margin:auto;
+        padding:1% 5%;
+        text-align:justify;
+        text-justify:inter-word;
+    }
 }
 @media screen and (min-width:993px){
     div.serv-mob{

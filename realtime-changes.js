@@ -111,40 +111,124 @@ function changeOpac(hoveredItem) {
     (hoveredItem.id != 'button6') ? click6.style.opacity = '0.5' : '';
 }
 
-const mobItemClick1 = document.getElementById('mob-btn-1');
-const mobItemClick2 = document.getElementById('mob-btn-2');
-const mobItemClick3 = document.getElementById('mob-btn-3');
-const mobItemClick4 = document.getElementById('mob-btn-4');
-const mobItemClick5 = document.getElementById('mob-btn-5');
-const mobItemClick6 = document.getElementById('mob-btn-6');
+const mobItemClick1 = document.getElementById("mob-btn-1");
+const mobItemClick2 = document.getElementById("mob-btn-2");
+const mobItemClick3 = document.getElementById("mob-btn-3");
+const mobItemClick4 = document.getElementById("mob-btn-4");
+const mobItemClick5 = document.getElementById("mob-btn-5");
+const mobItemClick6 = document.getElementById("mob-btn-6");
 
-function descAnim(selected) {
-    switch (selected.id) {
-        case 'mob-btn-1':
-            textDescCont = `<div><p>${soporteTecnico}</p></div>`;
-            selected.insertAdjacentHTML('afterend', textDescCont);
-            break;
-        case 'mob-btn-2':
-            textDescCont = `<div><p>${seguridadVigilancia}</p></div>`;
-            selected.insertAdjacentHTML('afterend', textDescCont);
-            break;
-        case 'mob-btn-3':
-            textDescCont = `<div><p>${backups}</p></div>`;
-            selected.insertAdjacentHTML('afterend', textDescCont);
-            break;
-        case 'mob-btn-4':
-            textDescCont = `<div><p>${mantenimientoActualizacion}</p></div>`;
-            selected.insertAdjacentHTML('afterend', textDescCont);
-            break;
-        case 'mob-btn-5':
-            textDescCont = `<div><p>${accesorios}</p></div>`;
-            selected.insertAdjacentHTML('afterend', textDescCont);
-            break;
-        case 'mob-btn-6':
-            textDescCont = `<div><p>${lastItem}</p></div>`;
-            selected.insertAdjacentHTML('afterend', textDescCont);
-            break;
-        default:
+counter1 = 0;
+counter2 = 0;
+counter3 = 0;
+counter4 = 0;
+counter5 = 0;
+counter6 = 0;
+
+
+mobItemClick1.onclick = function(){
+    if (counter1 === 0 ) {
+            descriptionContainer1 = document.createElement('div');
+            descriptionText1 = document.createElement('p');
+            descriptionContainer1.appendChild(descriptionText1);
+            descriptionText1.innerHTML = soporteTecnico;
+            descriptionText1.setAttribute('CLASS', 'removableButton');
+            descriptionText1.setAttribute('ID', 'removable1Button');
+            this.insertAdjacentHTML('afterend', descriptionContainer1.innerHTML);
+            counter1++;
+    } else {
+        removableButton1 = document.getElementById('removable1Button');
+        removableButton1.remove();
+        counter1--;
     }
-}
+};
+
+mobItemClick2.onclick = function(){
+    if (counter2 === 0 ) {
+            descriptionContainer2 = document.createElement('div');
+            descriptionText2 = document.createElement('p');
+            descriptionContainer2.appendChild(descriptionText2);
+            descriptionText2.innerHTML = seguridadVigilancia;
+            descriptionText2.setAttribute('CLASS', 'removableButton');
+            descriptionText2.setAttribute('ID', 'removable2Button');
+            this.insertAdjacentHTML('afterend', descriptionContainer2.innerHTML);
+            counter2++;
+    } else {
+        removableButton2 = document.getElementById('removable2Button');
+        removableButton2.remove();
+        counter2--;
+    }
+};
+
+mobItemClick3.onclick = function(){
+    if (counter3 === 0 ) {
+            descriptionContainer3 = document.createElement('div');
+            descriptionText3 = document.createElement('p');
+            descriptionContainer3.appendChild(descriptionText3);
+            descriptionText3.innerHTML = backups;
+            descriptionText3.setAttribute('CLASS', 'removableButton');
+            descriptionText3.setAttribute('ID', 'removable3Button');
+            this.insertAdjacentHTML('afterend', descriptionContainer3.innerHTML);
+            counter3++;
+    } else {
+        removableButton3 = document.getElementById('removable3Button');
+        removableButton3.remove();
+        counter3--;
+    }
+};
+
+mobItemClick4.onclick = function(){
+    if (counter4 === 0 ) {
+            descriptionContainer4 = document.createElement('div');
+            descriptionText4 = document.createElement('p');
+            descriptionContainer4.appendChild(descriptionText4);
+            descriptionText4.innerHTML = mantenimientoActualizacion;
+            descriptionText4.setAttribute('CLASS', 'removableButton');
+            descriptionText4.setAttribute('ID', 'removable4Button');
+            this.insertAdjacentHTML('afterend', descriptionContainer4.innerHTML);
+            counter4++;
+    } else {
+        removableButton4 = document.getElementById('removable4Button');
+        removableButton4.remove();
+        counter4--;
+    }
+};
+
+mobItemClick5.onclick = function(){
+    if (counter5 === 0 ) {
+            descriptionContainer5 = document.createElement('div');
+            descriptionText5 = document.createElement('p');
+            descriptionContainer5.appendChild(descriptionText5);
+            descriptionText5.innerHTML = accesorios;
+            descriptionText5.setAttribute('CLASS', 'removableButton');
+            descriptionText5.setAttribute('ID', 'removable5Button');
+            this.insertAdjacentHTML('afterend', descriptionContainer5.innerHTML);
+            counter5++;
+    } else {
+        removableButton5 = document.getElementById('removable5Button');
+        removableButton5.remove();
+        counter5--;
+    }
+};
+
+mobItemClick6.onclick = function(){
+    if (counter6 === 0 ) {
+            descriptionContainer6 = document.createElement('div');
+            descriptionText6 = document.createElement('p');
+            descriptionContainer6.appendChild(descriptionText6);
+            descriptionText6.innerHTML = lastItem;
+            descriptionText6.setAttribute('CLASS', 'removableButton');
+            descriptionText6.setAttribute('ID', 'removable6Button');
+            this.insertAdjacentHTML('afterend', descriptionContainer6.innerHTML);
+            counter6++;
+    } else {
+        removableButton6 = document.getElementById('removable6Button');
+        removableButton6.remove();
+        counter6--;
+    }
+};
+
+
+
+
 
