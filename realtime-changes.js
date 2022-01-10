@@ -224,6 +224,14 @@ mobItemClick6.onclick = function(){
 };
 
 
+const popupWindow = document.getElementById('popup');
+function mpPopup() {
+    popupWindow.style.display = 'flex';
+}
+function closePopup() {
+    popupWindow.style.display = 'none';
+}
+
 
 
 
