@@ -11,6 +11,18 @@
     <title>MAB COMPUTERS</title>
   </head>
   <body  id="start">
+        <div class="mp-cont" id="popup">
+            <div class="mp-center">
+                <img class="mp-img" src="./mp_.png"/>
+                    <div class="mp-bl">
+                        <p class="mp-text">Mariano Ariel Banchero</p>
+                        <p class="mp-text">CVU: 0000003100035309499819</p>
+                        <p class="mp-text">Alias: mabcomputers.cash</p>
+                        <p class="mp-text">CUIT/CUIL: 20232118793</p>
+                    </div>
+                <button id='x' onClick='closePopup()'>X</button>
+            </div>
+        </div>
   <header>
     <div class="biglogo">
         <img id="logo" src="./mab_computers_web.png"/>
@@ -21,14 +33,13 @@
             <div class="botones"><h5 class="important-buttons"><a href="#start">INICIO</a></h5></div>
             <div class="botones"><h5 class="important-buttons"><a href="#services">SERVICIOS</a></h5></div>
             <div class="botones"><h5 class="important-buttons"><a href="#contact">CONTACTO</a></h5></div>
-            <div class="botones"><h5 class="important-buttons"><a id="pointer">MERCADOPAGO</a></h5></div>
+            <div class="botones"  onClick="mpPopup()"><h5 class="important-buttons"><a id="pointer">MERCADOPAGO</a></h5></div>
         </nav>
         <nav class="second-mm">
             <a class="especialboton2" target="_blank" href="https://download.teamviewer.com/download/TeamViewer_Setup_x64.exe"><div class="especialboton2"><h5 class="tvad">TEAMVIEWER</h5></div></a>
             <a href="https://anydesk.com/en/downloads/thank-you?dv=win_exe" target="_blank"><div class="especialboton1"><h5 class="tvad">ANYDESK</h5></div></a>
         </nav>
     </div>
-
     <main>
     <div id="display-block">
 
@@ -238,7 +249,7 @@
                     en el mercado<br>
                         nos avalan</span></h2>
                         <a id="cta" href="https://wa.me/5401149973047"><p>¡Contactanos!</p></a>
-        <img class="first-image" src="./repair-cpu1v2.svg"/>
+        <img class="first-image" src="./repair-cpu1.svg"/>
     </div>
 
     <div class="servicios" id="services">
@@ -296,11 +307,12 @@
         </div>
     </footer>
     </main>
+
+
                                 <!-- MOBILE -->
     <div class="serv-mob">
         <div class="mob-background">
             <div class="mob-intro">
-<!--                 <img src="./repair-cpu4.svg" class="main-art" /> -->
                 <p class="maintitle">28 años<br>de experiencia<br>en el mercado<br>nos avalan</p>
             </div>
         </div>
