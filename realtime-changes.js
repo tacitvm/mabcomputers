@@ -222,13 +222,15 @@ mobItemClick6.onclick = function(){
         counter6--;
     }
 };
-
-
+const websiteBody = document.body;
 const popupWindow = document.getElementById('popup');
+
 function mpPopup() {
+    websiteBody.style.overflow = 'hidden';
     popupWindow.style.display = 'flex';
 }
 function closePopup() {
+    websiteBody.style.overflow = 'visible';
     popupWindow.style.display = 'none';
 }
 
